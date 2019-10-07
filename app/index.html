@@ -51,6 +51,13 @@
 
     <!-- Your styles -->
     <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Repro SDK-->
+    <script>
+        !function(o,e,n){var r=[];window.reproio=function(){r.push(arguments)};var i=o.createElement(e),t=o.getElementsByTagName(e)[0];i.src="https://cdn.reproio.com/web/v2/repro-sdk.min.js",i.async=!0,i.crossOrigin="",i.onload=function(){window.reproio("setSnippetVersion","2.0"),r.forEach(function(o){window.reproio.apply(window.reproio,o)})},t.parentNode.insertBefore(i,t)}(document,"script");
+        reproio("setup", "234eb3e6-85ab-4978-a359-108908136ab2");
+    </script>
+
   </head>
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
